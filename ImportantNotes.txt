@@ -1,0 +1,28 @@
+Random Notes -
+
+1) A simple and shorthand syntax for array rotation in Python is
+
+* Right Rotation *
+
+ def right_rotation(a, k):
+   # if the size of k > len(a), rotate only necessary with
+   # module of the division
+   rotations = k % len(a)
+   return a[-rotations:] + a[:-rotations]
+
+* Left Rotation *
+
+ def left_rotation(a, k):
+   # if the size of k > len(a), rotate only necessary with
+   # module of the division
+   rotations = k % len(a)
+   return a[rotations:] + a[:rotations]
+
+arr = arr[4:]+arr[:4]
+
+
+2) Symbols -
+
+* = print data in raw format
+_ = Dont care about the variable or the number of times the loop is being run
+
